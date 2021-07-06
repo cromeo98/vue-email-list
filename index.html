@@ -11,9 +11,11 @@
 <body>
 
     <div id="root">
-        <ul>
-            <li v-for="email in eMailList">{{email}}</li>
-        </ul>
+        <template v-if="eMailList.length > 9">
+            <ul>
+                <li v-for="email in eMailList">{{email}}</li>
+            </ul>
+        </template>
     </div>
 
     <script src="js/script.js"></script>
