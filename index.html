@@ -11,7 +11,9 @@
 <body>
 
     <div id="root">
-        {{eMailList}}
+        <ul>
+            <li v-for="email in eMailList">{{email}}</li>
+        </ul>
     </div>
 
     <script src="js/script.js"></script>
